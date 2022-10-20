@@ -1,5 +1,5 @@
 import System.IO(hSetBuffering, stdout, BufferMode(NoBuffering))
-import System.Random
+import System.Random(randomRIO)
 import Myfile(fileR,fileW,isFile)
 import Useful(sepChar,getIndex,replCon)
 
@@ -37,6 +37,7 @@ mLoop c = do
       if (c==nc) then return () else fileW nc
       return nc
     "q" -> return "q"
+    _   -> return c
   if (nc=="q") then return () else mLoop nc
 
 putMyData :: [(String,String,String)] -> IO ()
