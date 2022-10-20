@@ -44,9 +44,9 @@ putMyData :: [(String,String,String)] -> IO ()
 putMyData [] = return ()
 putMyData ((y,n,c):xs) = do
   let che = if (c=="0") then " ---" else " *-*"
-  putStr "○" >> putStr y >> putStrLn che
+  putStr "○ " >> putStr y >> putStrLn che
   getLine
-  putStr "☆" >> putStrLn n
+  putStr "☆ " >> putStrLn n
   getLine
   putMyData xs
 
@@ -54,9 +54,9 @@ testMyData :: [String] -> [(String,String,String)] -> IO [String]
 testMyData cs [] = return cs 
 testMyData cs ((_,_,"1"):xs) = testMyData cs xs
 testMyData cs ((y,n,c):xs) = do
-  putStr "○" >> putStrLn y
+  putStr "○ " >> putStrLn y
   getLine
-  putStr "☆" >> putStrLn n
+  putStr "☆ " >> putStrLn n
   ir <- isRemember
   let ncs = if ir then changeData cs (y++";"++n++";1") else cs
   testMyData ncs xs
