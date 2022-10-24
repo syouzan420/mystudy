@@ -27,3 +27,5 @@ CSMA/CD方式;伝送路上の信号を監視し 伝送路上に信号がない�
 NAPT(IPマスカレード);1つのグローバルIPアドレスを複数の端末で共有するための技術 Network Address Port Translation;0
 WPA3;Wi-Fi Protected Access 無線LANの暗号化方式の規格;0
 SIEM;Security Information and Event Management ネットワーク内のさまざまな機器やソフトウェアからログを収集し 一元管理する統合ログ管理システム;0
+ITポートフォリオ;IT資源をさまざまな面から評価し IT予算の最適配分を行ふもの;0
+ファンクションポイント法;ソフトウェアの機能を 入出力データ数やファイル数などによって定量的に計測し 複雑さによる調整を行って ソフトウェア規模を見積もる方法;0
