@@ -27,11 +27,11 @@ mLoop c = do
       if ic then fileW nc >> putStrLn "記録したよ" else putStrLn "やめたよ"
       return nc
     mc' | mc'=="u" || mc'=="う" -> do
-      sfyn <- sfls 5 yns
+      sfyn <- sfls 20 yns
       putMyData sfyn
       return c
     mc' | mc'=="a" || mc'=="あ" -> do
-      sfyn <- sfls 5 yns
+      sfyn <- sfls 20 yns
       ncs <- testMyData cs sfyn
       let nc = unlines ncs 
       if (c==nc) then return () else fileW nc
