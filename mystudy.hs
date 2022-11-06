@@ -76,7 +76,7 @@ confirm = do
 
 isRemember :: IO Bool
 isRemember = do
-  putStrLn "**********？ (N/y)"
+  putStrLn "おぼえた？ (N/y)"
   n <- getLine
   if (n=="y" || n=="Y" || n=="うん" || n=="はい" || n=="おぼえた" || n=="unn") 
      then return True else return False
